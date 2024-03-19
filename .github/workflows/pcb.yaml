@@ -3,14 +3,14 @@ name: Generate Gerber and PCB Files
 on:
   push:
     paths:
-    - '**.sch'
+    - '**.kicad_sch'
     - '**.kicad_pcb'
     - '.github/**.yml' # Trigger on changes to the workflow file
     - '**.kibot.yml' # Trigger on changes to the KiBot config file used in the workflow
 
   pull_request:
     paths:
-      - '**.sch'
+      - '**.kicad_sch'
       - '**.kicad_pcb'
       - '.github/**.yml' # Trigger on changes to the workflow file
       - '**.kibot.yml' # Trigger on changes to the KiBot config file used in the workflow
